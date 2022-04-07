@@ -1,0 +1,76 @@
+body {
+    display: block;
+    margin: 50px;
+    background-color: white;
+}
+
+
+header {
+    background-color: red;
+    padding: 10px 20px;
+    color:white;
+}
+
+#list-how-embed {
+    padding-top: 10px;
+    padding-left: 0px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    background-color:whitesmoke;
+    width: 60%;
+
+}
+
+#how-embed {
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    background-color: black;
+    display: flex;
+    justify-content: center;  
+    
+  }
+  
+#how-embed > iframe {
+    max-width: 560px;
+    max-height: 315px;
+    width: 100%;
+  }
+
+#sidebar{
+    float: right;
+    width: 550px;
+    height: 100%;
+    background: whitesmoke;
+    text-align: right;
+    color:whitesmoke
+    
+   
+}
+#sidebar ul li{
+    padding-bottom: 10px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-left: 0px;
+    text-align: center;
+}
+
+.note {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    margin: 15px;
+    width: calc(100% / 2);
+    border: 1px solid #000;
+    border-radius: 3px;
+    justify-content: center;
+    padding-left: 15px ;
+  }
+.no-margin{
+    margin-left: 20px;
+    margin-right: 50px;
+    padding-right: 30px;
+
+}

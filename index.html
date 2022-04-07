@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Andy Alv" content="Project Media">
+    <meta name="Description" content="Embed videos & playlists">
+    <title>Embed videos & playlists</title>
+    <link rel="icon" href="play_youtube_920x920.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+<header>
+    <h1>Embedding the YouTube video player into the page</h1>
+    <p>You can add a YouTube video or playlist to a website or blog by embedding it.</p>
+</header>
+<hr>
+<div id="sidebar">
+
+  <ul>
+    <li>
+      <iframe width="460" height="315" src="https://www.youtube.com/embed/Ya_4rht4DG8?controls=0" title="YouTube video player" frameborder="0" 
+       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </li>
+    <li>
+      <iframe width="460" height="315" src="https://www.youtube.com/embed/VM_GuERfihs?controls=0" title="YouTube video player" frameborder="0"
+       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </li>
+    <li>
+      <iframe width="460" height="315" src="https://www.youtube.com/embed/A63imEmP_-I?controls=0" title="YouTube video player" frameborder="0"
+       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </li>
+    <li>
+      <iframe width="460" height="315" src="https://www.youtube.com/embed/R0h9qvX2Wy0?controls=0" title="YouTube video player" frameborder="0"
+       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </li>
+    <li>
+      <iframe width="460" height="315" src="https://www.youtube.com/embed/videoseries?controls=0&amp;list=PL9hW1uS6HUfu4OBsf1XQEQN5swfKfxNO2" title="YouTube video player" frameborder="0"
+       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </li>
+</ul>
+</div>
+<section id="how-embed">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/lJIrF4YjHfQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   
+  </section>
+  <hr>
+<section id="list-how-embed">
+<ol>
+    <li>On a computer, go to the YouTube video or playlist you want to embed.</li>
+    <li>Click <strong>SHARE</strong> <img src="//storage.googleapis.com/support-kms-prod/dJviTGFzvddvW4FXLvi4NS4ZrkJKjtwkqxyn" width="18" height="18" alt="Share" data-mime-type="image/png">.</li>
+    <li>From the list of Share options, click <strong>Embed</strong>.</li>
+    <li>From the box that appears, copy the HTML code.</li>
+    <li>Paste the code into your website HTML.</li>
+    <li>For network administrators: You will need to add youtube.com to the firewall allowlist.</li>
+    <li><strong>Important: </strong>If your website or app is child directed and you embed YouTube content, you must self designate your site or app using <a href="https://support.google.com/policies/answer/9664901" target="_blank" rel="noopener">these tools</a>. This self designation will ensure Google does not serve personalized ads on these sites or apps and some features will be disabled in the embedded player.</li>
+  </ol>
+</section>
+<section class="note">
+  <p><strong>Note:</strong> Age-restricted videos can't be watched on most 3rd party websites. These videos will redirect viewers back to YouTube when played.</p>
+</section>
+<section class="no-margin">
+  
+  <h2>Manage video embedding options</h2> 
+  
+  <hr>
+
+  <aside>
+    <details >
+       <summary><a class="zippy">Turn on privacy-enhanced mode</a></summary>
+       <div>
+        <p>The Privacy Enhanced Mode of the YouTube embedded player prevents the use of views of embedded YouTube content from influencing the viewer’s browsing experience on YouTube. This means that the view of a video shown in the Privacy Enhanced Mode of the embedded player will not be used to personalize the YouTube browsing experience, either within your Privacy Enhanced Mode embedded player or in the viewer's subsequent YouTube viewing experience.&nbsp;</p>
+      
+        <p>If ads are served on a video shown in the Privacy Enhanced Mode of the embedded player, those ads will likewise be non-personalized. In addition, the view of a video shown in the Privacy Enhanced Mode of the embedded player will not be used to personalize advertising shown to the viewer outside of your site or app.</p>
+      
+        <p>As a reminder, the <a href="https://developers.google.com/youtube/terms/api-services-terms-of-service" rel="noopener" target="_blank">YouTube API Terms of Service</a> and <a href="https://developers.google.com/youtube/terms/developer-policies" rel="noopener" target="_blank">Developer Policies</a> apply to the access and use of the YouTube embedded player.&nbsp;</p>
+      
+        <p>To use Privacy Enhanced Mode:</p>
+      
+        <ol>
+          <li>Change the domain for the embed URL in your HTML from https://www.youtube.com to https://www.youtube-nocookie.com.</li>
+          <li>For network administrators: You will need to add youtube-nocookie.com to the firewall allowlist.&nbsp;&nbsp;</li>
+          <li>For use in applications, use a WebView instance of the embedded player. Privacy Enhanced Mode is available only for embedded players on websites.&nbsp;</li>
+          <li><strong>Important: </strong>If your website or app is child directed, you must self designate your site or app using <a href="/policies/answer/9664901" rel="noopener"><u>these tools</u></a>, as required by the <a href="https://developers.google.com/youtube/terms/api-services-terms-of-service"><u>YouTube API Terms of Service</u></a> and <a href="https://developers.google.com/youtube/terms/developer-policies#j.-child-directed-api-clients"><u>Developer Policies</u></a>, even if you embed YouTube videos with the Privacy Enhanced Mode player.</li>
+        </ol>
+      
+        <p>Example:</p>
+      
+        <p><em><span class="underline">Before</span></em></p>
+      
+        <p>&lt;iframe width="1440" height="762"&nbsp;</p>
+      
+        <p>src="https://www.youtube.com/embed/7cjVj1ZyzyE"</p>
+      
+        <p>frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;</p>
+      
+        <p><em><span class="underline">After</span></em></p>
+      
+        <p>&lt;iframe width="1440" height="762" src="https://www.youtube-nocookie.com/embed/7cjVj1ZyzyE"</p>
+      
+        <p>frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;</p>
+      
+        <p>&nbsp;</p>
+      
+        <div class="note">
+         
+            <p><strong>Note:</strong>&nbsp;If the viewer clicks or taps out of the embed and is redirected to another website or app, that website or app may track the viewer's behavior as per that website's or app's policies and terms.</p>
+          
+        </div>
+      </div>
+    </details>
+ </aside>
+<aside>
+  <details>
+    <summary><a class="zippy">Make an embedded video play automatically</a></summary>
+
+<div>
+  <p>To make an embedded video autoplay, add "<strong>&amp;autoplay=1</strong>" to the video's embed code right after the video ID (the series of letters that follows "embed/").</p>
+
+  <p>Embedded videos that are autoplayed don't increment video views.</p>
+
+  <p><strong>Example:</strong></p>
+
+  <blockquote>
+  <pre>
+&lt;iframe width="560" height="315"
+src="https://www.youtube.com/embed/D6Ac5JpCHmI?<strong>&amp;autoplay=1</strong>"frameborder="0"&nbsp;
+allowfullscreen&gt;&lt;/iframe&gt;
+</pre>
+  </blockquote>
+</div>
+<a class="zippy">Start an embedded video at a certain time</a>
+
+<div>
+  <p>To have a video start playing from a specific point, add&nbsp;“<strong>?start=</strong>” to a video's embed code, followed by the time in seconds at which you'd like the video to begin playing.</p>
+
+  <p>For example, if you want a video to start at 1 minute and 30 seconds into the video, your embed code would look something like this:</p>
+
+  <blockquote>
+  <pre>
+&lt;iframe allowfullscreen="" frameborder="0" height="315" src="http://www.youtube.com/embed/UkWd0azv3fQ<strong>?star</strong><em><strong>t=90</strong></em>"&nbsp;
+width="420"&gt;&lt;/iframe&gt;</pre>
+  </blockquote>
+</div>
+</details>
+</aside>
+<aside>
+  <details>
+    <summary><a class="zippy">Start an embedded video at a certain time</a></summary>
+
+<div>
+  <p>To have a video start playing from a specific point, add&nbsp;“<strong>?start=</strong>” to a video's embed code, followed by the time in seconds at which you'd like the video to begin playing.</p>
+
+  <p>For example, if you want a video to start at 1 minute and 30 seconds into the video, your embed code would look something like this:</p>
+
+  <blockquote>
+  <pre>
+&lt;iframe allowfullscreen="" frameborder="0" height="315" src="http://www.youtube.com/embed/UkWd0azv3fQ<strong>?star</strong><em><strong>t=90</strong></em>"&nbsp;
+ width="420"&gt;&lt;/iframe&gt;</pre>
+  </blockquote>
+</div>
+<a class="zippy">Add captions to an embedded video</a>
+
+<div>
+  <p>Make captions automatically appear for an embedded video by adding "<strong>&amp;cc_load_policy=1</strong>" to the video's embed code.</p>
+
+  <p>You can also choose a caption language for the embedded video. To specify the caption language for the video that you'd like to embed, just add "<strong>&amp;cc_lang_pref=fr&amp;cc_load_policy=1</strong>" to the video's embed code.</p>
+
+  <ul>
+    <li>"cc_lang_pref" sets the language for the captions shown in the video.</li>
+    <li>"cc_load_policy=1" turns captions on by default.</li>
+    <li>"fr" represents the language code for French. You can look up 2-letter language codes in the <a href="http://www.loc.gov/standards/iso639-2/php/code_list.php" target="_blank" rel="noopener">ISO 639-1 standard</a>.</li>
+  </ul>
+</div>
+  </details>
+</aside>
+<aside>
+  <details>
+    <summary><a class="zippy">Turn off embedding for your videos</a></summary>
+
+<div>
+  <div class="no-margin">If you've uploaded a video and don't want to allow others to embed your video on external sites, follow these steps:</div>
+
+  <ol>
+    <li>Sign in to <a href="http://studio.youtube.com" rel="noopener" target="_blank">YouTube Studio</a>.</li>
+    <li>From the left menu, select <strong>Content</strong>.</li>
+    <li>Next to the video you’d like to manage, select Details <img src="//storage.googleapis.com/support-kms-prod/6e6pdFxUbDLmX6gnCLoZFeuYBHPwYcsGn5Jx" width="24" height="24" alt="" data-mime-type="image/png">.</li>
+    <li>From the top, select <strong>SHOW MORE</strong>.</li>
+    <li>Uncheck the box next to “Allow embedding” and <strong>SAVE</strong>.</li>
+  </ol>
+</div>
+  </details>
+</aside>
+</section>
+<hr>
+<footer>
+  <p>&lt;&lt;&lt; &copy;Andy Alv&gt;&gt;&gt;</p>
+</footer>
+</body>
+</html>
